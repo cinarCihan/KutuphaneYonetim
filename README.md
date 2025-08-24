@@ -21,7 +21,7 @@ Projeyi tercih ettiğiniz Java IDE'sinde açın.
 Veritabanını oluşturun:
 
 PostgreSQL’e giriş yapın ve yeni bir veritabanı oluşturun:
-CREATE DATABASE kutuphane;
+```sql CREATE DATABASE kutuphane;
 library.sql dosyasını kullanarak tabloları ve örnek verileri ekleyin:
 psql -U [kullanici_adi] -d kutuphane -f library.sql
 IDE üzerinden veritabanı bağlantı ayarlarını yapın (kullanıcı adı, şifre, veritabanı adı).
