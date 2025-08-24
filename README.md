@@ -48,7 +48,3 @@ library.sql dosyası, gerekli tabloları ve örnek verileri içerir.
 
 Projeyi çalıştırmadan önce PostgreSQL üzerinde bu dosya ile veritabanınızı oluşturmanız gerekir.
 
-Bunu `README.md` olarak koyarsanız, PostgreSQL kullanıcıları direkt çalıştırabilir.  
-
-İsterseniz bir sonraki adım olarak **örnek ekran görüntüleri ve veritabanı bağlantı örnekleri ekleyerek README’yi daha görselleştirilmiş hale** getirebilirim.
-
