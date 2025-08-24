@@ -8,6 +8,7 @@ KutuphaneYonetim, bir kütüphane yönetim sistemidir. Bu proje, kütüphane kit
 
 - Java 8 veya daha yeni bir sürüm  
 - Eclipse IDE veya IntelliJ IDEA gibi bir Java geliştirme ortamı  
+- PostgreSQL veritabanı (library.sql dosyası ile kullanılabilir)
 
 ### Kurulum
 
@@ -17,9 +18,15 @@ KutuphaneYonetim, bir kütüphane yönetim sistemidir. Bu proje, kütüphane kit
    git clone https://github.com/cinarCihan/KutuphaneYonetim.git
 Projeyi tercih ettiğiniz Java IDE'sinde açın.
 
-Gerekli bağımlılıkları ve yapılandırmaları IDE üzerinden yapın.
+Veritabanını oluşturun:
 
-Uygulamayı çalıştırarak kütüphane yönetim sistemini kullanmaya başlayın.
+PostgreSQL’e giriş yapın ve yeni bir veritabanı oluşturun:
+CREATE DATABASE kutuphane;
+library.sql dosyasını kullanarak tabloları ve örnek verileri ekleyin:
+psql -U [kullanici_adi] -d kutuphane -f library.sql
+IDE üzerinden veritabanı bağlantı ayarlarını yapın (kullanıcı adı, şifre, veritabanı adı).
+
+Projeyi çalıştırın.
 
 🔧 Kullanım
 
@@ -30,3 +37,14 @@ Kullanıcı ekleme ve yönetimi
 Kitap ödünç alma ve iade işlemleri
 
 Raporlama ve istatistikler
+
+🗄️ Veritabanı
+
+library.sql dosyası, gerekli tabloları ve örnek verileri içerir.
+
+Projeyi çalıştırmadan önce PostgreSQL üzerinde bu dosya ile veritabanınızı oluşturmanız gerekir.
+
+Bunu `README.md` olarak koyarsanız, PostgreSQL kullanıcıları direkt çalıştırabilir.  
+
+İsterseniz bir sonraki adım olarak **örnek ekran görüntüleri ve veritabanı bağlantı örnekleri ekleyerek README’yi daha görselleştirilmiş hale** getirebilirim.
+
